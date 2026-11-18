@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 캘린더 위젯</title>
+<style>
+  :root { --bg: #fbfbfb; --text: #1b1b1b; --dim: #5f5f5f; --line: #e0e0e0; --accent: #005fb8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #202020; --text: #f3f3f3; --dim: #a0a0a0; --line: #3d3d3d; --accent: #4cc2ff; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 "Segoe UI", "Malgun Gothic", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; } h2 { font-size: 18px; margin: 28px 0 8px; }
+  .dim { color: var(--dim); } a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>개인정보처리방침</h1>
+  <p class="dim">캘린더 위젯 · 최종 수정 2026년 11월 18일</p>
+
+  <p>캘린더 위젯(이하 "위젯")은 사용자의 윈도우 PC에서 실행되는 개인용 프로그램입니다.
+     위젯에는 서버가 없으며, 만든 사람을 포함한 누구에게도 사용자 데이터를 보내지 않습니다.</p>
+
+  <h2>1. 위젯이 쓰는 구글 데이터</h2>
+  <p>사용자가 구글 로그인에서 허용한 범위 안에서, 위젯 화면에 보여 주고 사용자가 시킨 대로 고치는 데에만 씁니다.</p>
+  <div class="wrap"><table>
+    <tr><th>권한</th><th>쓰는 곳</th></tr>
+    <tr><td>Google 캘린더 보기·일정 수정</td><td>캘린더에 일정을 보여 주고, 사용자가 일정을 만들거나 고치거나 지울 때</td></tr>
+    <tr><td>위젯이 만든 캘린더 관리</td><td>할 일 알림을 휴대폰에서 받도록 "할 일 알림" 캘린더를 만들고 그 안의 일정을 관리할 때</td></tr>
+    <tr><td>Google Tasks(할 일)</td><td>할 일 목록을 보여 주고 추가·수정·완료·삭제할 때. 마감 시각은 할 일 메모란 첫 줄("⏰ 15:00")에 적습니다</td></tr>
+    <tr><td>위젯이 만든 Google 드라이브 파일만</td><td>메모장을 "위젯 메모장" 문서 하나와 맞출 때. 다른 드라이브 파일은 볼 수 없습니다</td></tr>
+  </table></div>
+
+  <h2>2. 저장하는 곳</h2>
+  <ul>
+    <li>일정·할 일·메모 원본은 사용자의 구글 계정에 있습니다.</li>
+    <li>로그인 토큰, 위젯 설정(색·알림 시각·창 위치 등), 메모 사본, 오류 기록은 사용자 PC의
+        <code>%APPDATA%\CalendarWidget</code> 폴더에만 저장됩니다.</li>
+    <li>위젯은 이 데이터를 다른 서버나 제3자에게 보내지 않고, 광고·분석·판매에 쓰지 않으며, 사람이 열람하지 않습니다.</li>
+  </ul>
+
+  <h2>3. Google API 서비스 사용자 데이터 정책</h2>
+  <p>위젯이 Google API로 받은 정보를 사용하고 다른 앱으로 전송하는 방식은
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>의
+     제한적 사용(Limited Use) 요구사항을 포함해 그 정책을 따릅니다.</p>
+
+  <h2>4. 권한 끊기와 데이터 지우기</h2>
+  <ul>
+    <li>구글 권한 끊기: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>에서 이 앱을 삭제합니다.</li>
+    <li>PC의 위젯 데이터 지우기: <code>%APPDATA%\CalendarWidget</code> 폴더를 삭제합니다.</li>
+    <li>위젯이 만든 "할 일 알림" 캘린더와 "위젯 메모장" 문서는 구글 캘린더·드라이브에서 직접 지울 수 있습니다.</li>
+  </ul>
+
+  <h2>5. 문의</h2>
+  <p><span id="contact">CONTACT_EMAIL</span></p>
+
+  <p class="dim"><a href="index.html">← 캘린더 위젯 소개</a></p>
+</main>
+</body>
+</html>
